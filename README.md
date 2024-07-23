@@ -66,5 +66,3 @@ Cadastra um novo usuário no sistema.
 ### GET /users
 
 Este endpoint é utilizado para listar todos os usuários cadastrados no sistema. Não é necessário enviar um payload no corpo da requisição para este endpoint.
-
-Esses exemplos representam como os dados podem ser estruturados ao enviar requisições para os respectivos endpoints da sua API. Certifique-se de implementar esses endpoints no seu sistema de acordo com as especificações desejadas.
