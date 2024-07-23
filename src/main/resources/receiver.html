@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificação de Pagamento Recebido - PicPay</title>
+  <style>
+    /* Estilos básicos para o email */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    .picpay-logo {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      border-radius: 25px;
+    }
+    .payment-info {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    .payment-info p {
+      margin: 10px 0;
+    }
+    .button {
+      display: inline-block;
+      background-color: #21C25E;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    .button:hover {
+      background-color: #1A9D4B;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://play-lh.googleusercontent.com/pTvc9kCumx_24eJDwGUpvcBwljcIBkrsL3qHwhBW2NalMQ-XxTtHRV9YAJanBxkV0Rw" alt="PicPay Logo" class="picpay-logo">
+    <h2>Pagamento Recebido</h2>
+    <p>Olá #{nome},</p>
+    <p>Você recebeu um pagamento no valor de R$#{valor} pelo PicPay.</p>
+    <div class="payment-info">
+      <p><strong>Data:</strong> #{data}</p>
+      <p><strong>Remetente:</strong> #{sender}</p>
+    </div>
+    <a href="https://picpay.com/" class="button">Ver Detalhes do Pagamento</a>
+    <p>Verifique sua conta PicPay para mais informações.</p>
+    <p>Atenciosamente,<br>Equipe PicPay</p>
+  </div>
+</body>
+</html>
